@@ -15,8 +15,8 @@
 				<a href="admin.php">Admin</a>
 			</div>
 			<div id="butmen" style="flex-grow: 2" align="right">
-				<button>abc</button>
-				<button>asd</button>
+				<button>sign-in</button>
+				<button>Sign-up</button>
 			</div>
 		</div>
 	</div>

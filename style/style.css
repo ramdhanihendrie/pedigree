@@ -71,6 +71,16 @@ body{
 	border-radius: 7px;
 }
 
+#navsignin a{
+	align-items: center;
+	font-size: 13px;
+	font: Regular Verdana;
+	letter-spacing: 0;
+	color: white;
+	margin-right: 20px;
+	text-decoration: none;
+}
+
 #navsignup{
 	background-color: white;
 	color: blue;
@@ -79,12 +89,23 @@ body{
 	border-radius: 7px;
 }
 
+#navsignup a{
+	align-items: center;
+	font-size: 13px;
+	font: Regular Verdana;
+	letter-spacing: 0;
+	color: blue;
+	margin-right: 20px;
+	text-decoration: none;
+}
+
 #page{
 	width: 1000px;
 	height: auto;
 	text-align: center;
 	padding: 150px 0;
 }
+
 
 #footer{
 	text-align: center;

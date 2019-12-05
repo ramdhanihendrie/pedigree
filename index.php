@@ -16,8 +16,12 @@
 					<a href="?module=admin#pos">Admin</a>
 				</div>
 				<div id="butmen" style="flex-grow: 2" align="right">
-					<input type="submit" name="signin" value="Sign-In" id="navsignin">
-					<input type="submit" name="signup" value="Sign-Up" id="navsignup">
+					<div id="navsignin">
+						<a href="?module=signin#pos">Sign-In</a>
+					</div>
+					<div id="navsignup">
+						<a href="?module=signup#pos">Sign-Up</a>
+					</div>
 				</div>
 			</div>
 

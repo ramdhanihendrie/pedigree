@@ -13,7 +13,6 @@
 				<div style="flex-grow: 2" id="navmenu">
 					<a href="?module=home#pos">Home</a>
 					<a href="?module=about#pos">About</a>
-					<a href="?module=admin#pos">Admin</a>
 				</div>
 				<div id="butmen" style="flex-grow: 2" align="right">
 					<div id="navsignin">

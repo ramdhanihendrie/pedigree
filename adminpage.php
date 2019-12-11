@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>WEBSITE</title>
+	<title>Pedigree</title>
 	<link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 <body>
-	
 
 	<div id="container">
 		<div id="background">
-			<div id="header">
-				<h1>Pedigree</h1>
-				<form action="?module=logout#pos" method="post">
-					<a href="index.php" class="btn btn-login">Sign-Out</a>
-				</form>
-			</div>
+			<?php include "view/header-admin.php";
+				session_start();
+				include"content/connection.php";
+				$username = $_SESSION['username'];
+				echo "Welcome, $username";
+			 ?>
 			<div id="page">
 				<?php if(isset ($_GET ['module']))
 					include "content/$_GET[module].php";
@@ -22,10 +21,7 @@
 					include "content/tabel.php";?>
 			</div>
 		</div>
-
-		<div id="footer">
-			<h1>2019</h1>
-		</div>
+		<?php include "view/footer.php"; ?>
 	</div>
 
 

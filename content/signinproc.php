@@ -11,23 +11,23 @@ if ($rowcount==1) {
 	if ($check['level']=="admin") {
 		$_SESSION['username'] = $_POST['username'];
 		$_SESSION['password'] = $_POST['password'];
-		echo "<script>alert('Anda Berhasil Masuk');</script>";
+		echo "<script>alert('Sign-In Success');</script>";
 		header("location:adminpage.php");
 	}
 	elseif ($check['level']=="user") {
 		$_SESSION['username'] = $_POST['username'];
 		$_SESSION['password'] = $_POST['password'];
-		echo "<script>alert('Anda Berhasil Masuk');</script>";	
+		echo "<script>alert('Sign-In Success');</script>";	
 		header("location:userpage.php");
 	}
 	else {
 		$_SESSION['username'] = $_POST['username'];
 		$_SESSION['password'] = $_POST['password'];
-		echo "<script>alert('Anda Gagal Masuk, belum di acc');window.location.href='?module=signin#pos';</script>";
+		echo "<script>alert('Sign-In Failed, you not approved yet');window.location.href='?module=signin#pos';</script>";
 	}
 }
 else{
-	echo "<script>alert('Anda Gagal Masuk');window.location.href='?module=signin#pos';</script>";	
+	echo "<script>alert('Sign-In Failed');window.location.href='?module=signin#pos';</script>";	
 }
 
  ?>

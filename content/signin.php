@@ -1,9 +1,15 @@
 <h1>
-	<form action="?module=signinproc#pos" method="post">
-		Username <input type="username" name="username">
-		<br/>
-		Password <input type="password" name="password">
-		<br/>
-		<input type="submit" name="login" value="Sign-In">
-	</form>
+	Sign In
 </h1>
+	<form action="?module=signinproc#pos" method="post">
+		<table width="496" border="0" align="center">
+			<tr>
+				<td><input class="forms" type="text" name="username" placeholder="Username" required /></td>
+			</tr>
+			<tr>
+				<td><input class="forms" type="password" name="password" placeholder="Password" required /></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Sign-In"/></td>
+		</table>
+	</form>

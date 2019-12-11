@@ -1,6 +1,10 @@
 body{
 	font-family: arial;
 	padding: 0px;
+	height: auto;
+	width: auto;
+	background: url(../image/circuit-board.svg) #f3e3ff;
+	background-size: 400px;
 }
 
 #container{
@@ -9,7 +13,7 @@ body{
 	float: top;
 	width: 1000px;
 	height: auto;
-	background: #FFFFFF;
+	background: #FFFFFF opacity(5%);
 	color: white;
 
 }
@@ -45,7 +49,7 @@ body{
 }
 
 #navmenu{
-	margin-left: 200px;
+	margin-left: 150px;
 	margin-top: 6px;
 	position: center;
 }
@@ -64,51 +68,12 @@ body{
 	color: lightblue;
 }
 
-#butmen{
-	margin-right: 20px;
-}
-
-#navsignin{
-	background-color: blue;
-	color: white;
-	border: 1.5px solid white;
-	width: 80px;
-	border-radius: 7px;
-}
-
-#navsignin a{
-	align-items: center;
-	font-size: 13px;
-	font: Regular Verdana;
-	letter-spacing: 0;
-	color: white;
-	margin-right: 20px;
-	text-decoration: none;
-}
-
-#navsignup{
-	background-color: white;
-	color: blue;
-	border: 1.5px solid blue;
-	width: 80px;
-	border-radius: 7px;
-}
-
-#navsignup a{
-	align-items: center;
-	font-size: 13px;
-	font: Regular Verdana;
-	letter-spacing: 0;
-	color: blue;
-	margin-right: 20px;
-	text-decoration: none;
-}
 
 #page{
 	width: 1000px;
 	height: auto;
 	text-align: center;
-	padding: 150px 0;
+	padding: 160px 0;
 }
 
 #page table {
@@ -117,7 +82,7 @@ body{
 
 #footer{
 	text-align: center;
-	background: rgba(186, 186, 186, 0.3);
+	background: #20dde3;
 	display: block;
 }
 
@@ -128,4 +93,46 @@ body{
 
 .table-user a{
 	text-decoration: none;
+}
+
+.forms{
+	text-align: center;
+}
+
+.butmen{
+	padding-top: 7px;
+	text-align: right;
+	margin-right: 20px;
+	height: 49px;
+
+}
+
+.btnsignin{
+	background-color: blue;
+	color: white;
+	border: 1.5px solid white;
+	width: 80px;
+	border-radius: 7px;
+	height: 30px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 13px;
+	font: Regular Verdana;
+	letter-spacing: 0;
+	padding: 5px 10px;
+}
+
+.btnsignup{
+	background-color: white;
+	color: blue;
+	border: 1.5px solid blue;
+	width: 80px;
+	border-radius: 7px;
+	height: 30px;
+	font-size: 13px;
+	font: Regular Verdana;
+	letter-spacing: 0;
+	text-decoration: none;
+	text-align: center;
+	padding: 5px 10px;
 }

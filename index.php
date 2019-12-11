@@ -8,21 +8,8 @@
 <body>
 	<div id="container">
 		<div id="background">
-			<div id="header">
-				<h1 style="flex-grow: 1">Pedigree</h1>
-				<div style="flex-grow: 2" id="navmenu">
-					<a href="?module=home#pos">Home</a>
-					<a href="?module=about#pos">About</a>
-				</div>
-				<div id="butmen" style="flex-grow: 2" align="right">
-					<div id="navsignin">
-						<a href="?module=signin#pos">Sign-In</a>
-					</div>
-					<div id="navsignup">
-						<a href="?module=signup#pos">Sign-Up</a>
-					</div>
-				</div>
-			</div>
+			
+			<?php include "view/header.php" ?>
 
 			<div id="page">
 				<?php if(isset ($_GET ['module']))
@@ -31,11 +18,9 @@
 					include "content/home.php";?>
 			</div>
 		</div>
-
-		<div id="footer">
-			<h1>2019</h1>
-		</div>
+		
+		<?php include "view/footer.php"; ?>
+	
 	</div>
-
 </body>
 </html>

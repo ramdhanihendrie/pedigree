@@ -10,6 +10,7 @@ body{
 	width: 1000px;
 	height: auto;
 	background: #FFFFFF;
+	color: white;
 
 }
 
@@ -54,9 +55,13 @@ body{
 	font-size: 20px;
 	font: Regular Verdana;
 	letter-spacing: 0;
-	color: #2D2D2D;
+	color: white;
 	margin-right: 20px;
 	text-decoration: none;
+}
+
+#navmenu a:hover{
+	color: lightblue;
 }
 
 #butmen{
@@ -106,9 +111,21 @@ body{
 	padding: 150px 0;
 }
 
+#page table {
+	margin:auto;
+}
 
 #footer{
 	text-align: center;
 	background: rgba(186, 186, 186, 0.3);
 	display: block;
+}
+
+.table-user{
+	background-color: #cfe5e9; 
+	color: black;
+}
+
+.table-user a{
+	text-decoration: none;
 }

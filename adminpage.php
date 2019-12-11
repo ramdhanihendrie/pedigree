@@ -10,13 +10,16 @@
 	<div id="container">
 		<div id="background">
 			<div id="header">
-				<h1>Halaman Admin</h1>
+				<h1>Pedigree</h1>
 				<form action="?module=logout#pos" method="post">
 					<a href="index.php" class="btn btn-login">Sign-Out</a>
 				</form>
 			</div>
 			<div id="page">
-				<?php include "content/tabel.php" ?>
+				<?php if(isset ($_GET ['module']))
+					include "content/$_GET[module].php";
+				else
+					include "content/tabel.php";?>
 			</div>
 		</div>
 

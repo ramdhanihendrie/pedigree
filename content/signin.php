@@ -1,7 +1,8 @@
-<h1>
-	Sign In
-</h1>
-	<form action="?module=signinproc#pos" method="post">
+
+<form action="?module=signinproc#pos" method="post">
+	<h2>
+		Sign In
+	</h2>	
 		<table width="496" border="0" align="center">
 			<tr>
 				<td><input class="forms" type="text" name="username" placeholder="Username" required /></td>

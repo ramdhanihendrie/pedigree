@@ -1,3 +1,3 @@
-<div id="footer">
+<div class="footer">
 	<h1>2019</h1>
 </div>

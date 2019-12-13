@@ -1,3 +1,6 @@
+<?php 
+	
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,12 +11,7 @@
 	
 	<div id="container">
 		<div id="background">
-			<?php include "view/header-user.php";
-				session_start();
-				include"content/connection.php";
-				$username=$_SESSION['username'];
-				echo "Welcome, $username";
-			?>
+			<?php include "view/header-user.php"; ?>
 			<div id="page">
 				<?php if(isset ($_GET ['module']))
 					include "content/$_GET[module].php";

@@ -1,6 +1,6 @@
 		<?php
 		include "connection.php";
-		$select="select * from user";
+		$select="SELECT * FROM user WHERE level != 'admin'";
 		$hasil=mysqli_query($conn, $select);
 		$no =1;
 		?>

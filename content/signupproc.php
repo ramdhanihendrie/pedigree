@@ -2,7 +2,7 @@
 include "connection.php";
 
 $mysql = "INSERT INTO user
-(username, password) VALUES ('$_POST[username]', '$_POST[password]')";
+(username, password, level) VALUES ('$_POST[username]', '$_POST[password]', 'new')";
 
 if(!mysqli_query($conn, $mysql))
 die ("<script>alert('Invalid, username already taken'); window.location.href='../index.php?module=signup#pos'; </script>");

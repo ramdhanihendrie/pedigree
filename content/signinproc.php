@@ -17,6 +17,7 @@ if ($rowcount==1) {
 	elseif ($check['level']=="user") {
 		$_SESSION['username'] = $_POST['username'];
 		$_SESSION['password'] = $_POST['password'];
+		$_SESSION['no_family'] = $check['no_family'];
 		echo "<script>alert('Sign-In Success');</script>";	
 		header("location:userpage.php");
 	}

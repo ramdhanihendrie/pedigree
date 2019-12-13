@@ -27,7 +27,7 @@ while ($buff=mysqli_fetch_array($result)) {
 		<td>level</td>
 		<td>
 			<select name="level" style="width: 163.5px;">
-				<option value=""> </option>
+				<option value="new">New</option>
 				<option value="user">User</option>
 				<option value="admin">Admin</option>
 			</select>

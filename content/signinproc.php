@@ -11,6 +11,7 @@ if ($rowcount==1) {
 	if ($check['level']=="admin") {
 		$_SESSION['username'] = $_POST['username'];
 		$_SESSION['password'] = $_POST['password'];
+		$_SESSION['level'] = $check['level'];
 		echo "<script>alert('Sign-In Success');</script>";
 		header("location:adminpage.php");
 	}

@@ -10,11 +10,11 @@
 				include"content/connection.php";
 				$username=$_SESSION['username'];
 				$no_family=$_SESSION['no_family'];
-				echo "$username, $no_family"; ?>
+				echo "$username"; ?>
 	</h3>
 	<div class="butmen" style="flex-shrink: 1" align="right">
-		<form action="?module=signout#pos" method="post">
-			<a href="index.php" class="btnsignup">Sign-Out</a>
+		<form action="?module=signoutproc#pos" method="post">
+			<input class="btnsignout" type="submit" value="Sign-Out">
 		</form>
 	</div>
 </div>

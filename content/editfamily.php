@@ -1,27 +1,41 @@
 <?php 
-include "connection.php";
-$no_family=$_SESSION['no_family'];
+    include "connection.php";
 
-$query="SELECT * FROM family WHERE no_family='$no_family'";
-
-$result=mysqli_query($conn,$query);
-$buff=mysqli_fetch_array($result);
+    $query = "SELECT * FROM family WHERE (no_family='$_SESSION[no_family]' and stat='$_POST[stat]')";
+    $buff=(mysqli_fetch_assoc(mysqli_query($conn,$query)));
 ?>
-<h2>Edit Data</h2><br />
 <form action="?module=editfamilyproc#pos" method="post">
-    <table width="487" border="0">
+    <input type="hidden" name="stat" value="<?php echo $_POST['stat'] ?>">
+    <input type="hidden" name="no_family" value="<?php echo $_SESSION['no_family']?>">
+
+    <table>
         <tr>
-            <td width="150">First Name</td>
-            <td width="327"><input type="text" name="firstname" value="<?php echo $buff['firstname'];?>" /></td>
+            <td>First Name</td>
+            <td><input type="text" name="firstname" value="<?php echo $buff['firstname']?>"></td>
         </tr>
         <tr>
             <td>Last Name</td>
-            <td><input type="text" name="lastname" value="<?php echo $buff['lastname'];?>" /></td>
-        
-
+        <td><input type="text" name="lastname" value="<?php echo $buff['lastname']?>"></td>
+        </tr>
         <tr>
-            <td height="68" align="right"><input type="reset" value="reset" /></td>
-            <td><input type="submit" value="submit" /></td>
+            <td>Date of Birth</td>
+            <td><input type="date" name="birthdate" value="<?php echo $buff['birthdate']?>"></td>
+        </tr>
+        <tr>
+            <?php if($buff['gender']=="male") { ?>
+            <td>Gender</td>
+            <td><input type="radio" name="gender" value="male" checked>Male
+            <input type="radio" name="gender" value="female">Female</td>
+            <?php }
+            else{ ?>
+            <td><input type="radio" name="gender" value="male" >Male
+            <input type="radio" name="gender" value="female" checked>Female</td>
+            <?php } ?>
+        </tr>
+        <tr>
+            <td>Photo</td>
+            <td><input type="file" name="file" style="margin-left: 90px;"></td>
         </tr>
     </table>
+    <input type="submit" value="SAVE">
 </form>

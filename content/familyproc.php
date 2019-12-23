@@ -17,8 +17,8 @@
     <form action="?module=editfamily#pos" method="post">
         <input type="hidden" name="no_family" value="<?php echo $no_family?>">
         <input type="hidden" name="stat" value="<?php echo $stat?>">
-        <input type="submit" value="Edit">
-        <input type="submit" formaction="?module=viewfamily#pos" value="View">
+        <input type="submit" value="Edit" class="btns">
+        <input type="submit" formaction="?module=viewfamily#pos" value="View" class="btns">
     </form>
 
     <?php } 
@@ -28,8 +28,8 @@
     <form action="?module=addfamily#pos" method="post">
         <input type="hidden" name="no_family" value="<?php echo $no_family?>">
         <input type="hidden" name="stat" value="<?php echo $stat?>">
-        <input type="submit" value="Add">
-        <input type="submit" formaction="?module=viewfamily#pos" value="View">
+        <input type="submit" value="Add" class="btns">
+        <input type="submit" formaction="?module=viewfamily#pos" value="View" class="btns">
     </form>
 
     <?php 

@@ -1,8 +1,8 @@
 <?php 
     include "connection.php";
 
-    if(isset($_GET['no_family'])){
-        $no_family=$_GET['no_family'];
+    if(isset($_SESSION['no_family'])){
+        $no_family=$_SESSION['no_family'];
     }
     $query = "SELECT * FROM family WHERE (no_family ='$no_family') and (stat ='$stat')";
 

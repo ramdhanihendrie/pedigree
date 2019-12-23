@@ -148,5 +148,6 @@
         </div>
     </div>
 </div>
-
-<a class="btnprint" href="?module=print#pos" target="_blank">Print</a>
+<?php if (isset($_SESSION['no_family'])) { ?>
+    <a class="btnprint" href="?module=print#pos" target="_blank">Print</a>
+<?php } ?>
